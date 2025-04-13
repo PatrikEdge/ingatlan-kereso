@@ -1,0 +1,25 @@
+    <mat-card class="detail-card">
+      <img mat-card-image [src]="property.images[0]" alt="ingatlan kép" />
+  
+      <mat-card-header>
+        <mat-card-title>{{ property.title }}</mat-card-title>
+        <mat-card-subtitle>{{ property.location }}</mat-card-subtitle>
+      </mat-card-header>
+  
+      <mat-card-content>
+        <p><strong>Leírás:</strong> {{ property.description }}</p>
+        <p><strong>Ár:</strong> {{ property.price | number }} Ft</p>
+        <p><strong>Alapterület:</strong> {{ property.size }} m²</p>
+        <p><strong>Szobák száma:</strong> {{ property.rooms }}</p>
+      </mat-card-content>
+  
+      <mat-card-actions>
+        <button mat-raised-button color="primary">Kapcsolatfelvétel</button>
+      </mat-card-actions>
+    </mat-card>
+  </ng-container>
+  
+  <ng-template #notFound>
+    <p>Ingatlan nem található.</p>
+  </ng-template>
+  

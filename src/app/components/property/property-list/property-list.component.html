@@ -1,0 +1,8 @@
+<div class="property-list">
+    <app-property-card
+      *ngFor="let property of properties"
+      [property]="property"
+      (toggleFavorite)="property.isFavorite = $event"
+    ></app-property-card>
+  </div>
+  

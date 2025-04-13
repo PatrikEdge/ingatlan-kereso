@@ -1,0 +1,47 @@
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+    padding: 24px;
+  }
+  
+  .ingatlan-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  mat-card img {
+    object-fit: cover;
+    height: 200px;
+  }
+  
+  .leiras {
+    margin-top: 8px;
+    font-style: italic;
+    color: #555;
+  }
+  
+  .ingatlanok-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .card-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  mat-card-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .spacer {
+    flex: 1;
+  }
+  
